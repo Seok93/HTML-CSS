@@ -2,6 +2,11 @@
 
 ## HTML
 
+### 들어가기 전에...
+
+1. HTML의 tag나 attribute는 암기하지 말고 mdn에 가서 찾아가면서 사용하는게 제일 좋다. tag의 종류도 다양하고, tag에따라 지원하는 attribute도 다양하기 때문이다.
+2. mdn은 Mozilla Developer Network로 모든 tag와 해당 tag의 attribute가 전부 정리되어 있으며 예제를 통해 어떻게 실행되는지 바로 알 수 있다.
+
 ### 2장 텍스트 관련 태그
 
 ① 텍스트를 블록(Block)으로 묶어 처리하는 태그들  
@@ -36,6 +41,6 @@
  ③ 문단 스타일  
  ④ 목록 스타일
 
-## 클론 코딩
+## HTML/CSS 연습
 
-실습 예정
+### 1. kokoa-clone with Nomad Coders

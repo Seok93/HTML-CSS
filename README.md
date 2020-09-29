@@ -43,4 +43,4 @@
 
 ## HTML/CSS 연습
 
-### 노마드코더 kokoa-clone
+### 1. kokoa-clone with Nomad Coders

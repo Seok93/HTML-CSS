@@ -173,7 +173,7 @@ ex)
 
 ### 2.5 More Tags and head
 
-`<img>` 태그는 인터넷에 있는 이미지 url를 통해서도 표현가능하고
+`<img>` 태그는 인터넷에 있는 이미지 url를 통해서도 표현가능하고  
 local에 가지고 있는 이미지 경로를 지정해 보여줄 수 도 있다.
 
 이미지 경로는, 현재 이미지를 사용하려는 \*.html파일을 기준으로 찾아간다.
@@ -191,8 +191,8 @@ HTML 문서의 기본 구조
 </html>
 ```
 
-웹사이트는 2가지 부분으로 이루어져있다. (head와 body로 구성된다.)
-head는 웹사이트의 환경을 설정한다. 외부적으로 보여지지 않는 설정이다.
+웹사이트는 2가지 부분으로 이루어져있다. (head와 body로 구성된다.)  
+head는 웹사이트의 환경을 설정한다. 외부적으로 보여지지 않는 설정이다.  
 body는 사용자가 볼 수 있는 content를 설정한다.
 
 ### 2.6 Its All About the HEAD
@@ -219,7 +219,7 @@ body는 사용자가 볼 수 있는 content를 설정한다.
 
 ### 2.7 More Tags
 
-html tag, CSS의 property, JS등 웹에 관련된 내용을 찾을 때에는 mdn을 붙여서 검색하는게 좋다.
+html tag, CSS의 property, JS등 웹에 관련된 내용을 찾을 때에는 mdn을 붙여서 검색하는게 좋다.  
 mdn은 Mozilla Developer Network로 많은 정보가 잘 정리되어 있다.
 
 ```
@@ -454,3 +454,304 @@ border-style속성을 설정할 때.... 이쁘지 않기 때문에... 하나만 
 border: 2px solid black;
 
 질문: border은 inline에도 적용되는데, inline은 margin이랑 padding 설정은 불가능한가?
+답: inline에 padding 적용 가능, margin은 좌우만 적용 가능하다.
+
+### 3.8 Classes
+
+inline요소는 높이와 너비가 없으며, margin은 좌우만 적용 가능하다.  
+그 외의 border, padding은 다 적용이 가능하다.
+
+id는 유니크하기 때문에 한 문서, 한 요소에 지어지는 선택자인데,  
+class는 한 문서에 여러 요소에 같은 성질을 적용하기 위해 만들어진 선택자이다.
+
+CSS에서 class를 지정하기 위해 .를 사용한다.  
+#tomato = id="tomato"  
+.tomato = class="tomato"
+
+하나의 요소는 다수의 class명을 가질 수 있다.  
+`<span class="tomato potato honey">`
+
+### 3.9 Inline-Block
+
+display속성 중 inline-block이 있는데,  
+inline성질과 block의 성질을 둘다 가지도록 설정해주는 방법이다.
+
+때문에 block의 성질로 높이와 너비를 가지며, margin이 상하좌우 다 적용되며, inline의 성질로 옆에 다른 요소가 올 수 있다.
+
+근데... inline-block은 별로 좋은 선택지가 아니다.  
+여러가지 문제점을 가지고 있기 때문이다.
+
+① default로 margin 값이 적용된 것처럼 요소 사이에 공간이 생긴다. 그런데 개발자툴로 확인해보면, margin값이 적용된게 아니다...  
+② inline-block 사용을 위한 정해진 형식이 없다.  
+③ 웹페이지에 요소를 계속 추가하다보면, 공간이 애매하게 남아서, 좌우의 폭이 달라보이는 문제가 있다.  
+④ inline-block은 responsive design(반응형 디자인)을 지원하지 않는다. 즉 창 크기가 달라지면 영향을 받아 요소들이 들쭉날쭉해진다.
+
+### 3.10 Flexbox Part One
+
+flexbox는 박스들을 어떤 곳이든 둘 수 있어서 디자인을 구성하기에 좋다.  
+이름 그대로 엄청나게 유연하게 대응이 가능한 display 성질이다.
+
+flexbox를 사용하기 위해 지켜야할 규칙들이 3가지 있는데, 정말 중요하기 때문에 꼭 기억해야한다.  
+① flexbox에 관현 속성은 부모에만 지정하고, 자식 요소에는 어떤 것도 적지 말아야 한다. 즉, 부모요소가 자식요소를 통제하는 것이다.  
+②
+③
+
+```
+ex)
+    body {
+        height: 100vh; // vh는 viewport height의 약자이며, viewport는 screen이라눈 멀ㅀ 생각해도 된다.
+        display: flex;
+        justify-content: center | flex-end | flex-start | space-evenly | space-around etc;  // 주축에 적용하는 성질
+        align-items: center | flex-end | flex-start | space-evenly | space-around etc;      // 교차축에 적용하는 성질
+        flex-direction: row | row-reverse | column | column-reverse etc;   // 주축과 교차축의 방향 설정
+        flex-wrap: nowrap | wrap | wrap-reverse etc;       // 브라우저 크기 변화에 따른 자식 요소의 크기 변환 유지 여부 설정
+    }
+
+    <body>
+        <div></div>
+        <div></div>
+        <div></div>
+    </body>
+```
+
+space-evenly는 빈 공간을 같은 크리골 나누어서 배치할 때 사용한다.
+
+flexbox는 주축(main axis)과 교차축(cross axis)을 가진다.  
+주축의 기본값은 수평이며, 교차축은 수직이다.
+
+justify-content 속성은 주축을 대상으로 적용되는 성질이다.  
+align-items 속성은 교차축을 대상으로 적용되는 성질이다.  
+justify-content와 align-items 속성을 적용하기 위해서는 먼저 display: flex;가 선행되어야 한다.
+
+만약에 body에 height가 없고, 박스 크기만큼만 큰 경우, align-items를 설정하더라도 바뀌지 않을 것이다. 이미 맨 위부터 아래까지 전부 차지하고 중심에 있기 때문이다.
+
+### 3.11 Flexbox Part Two
+
+flex-direction을 이용하면 주축과 교차축을 변경할 때 사용한다.  
+디폴트로는 수평선이 주축, 수직선이 교차축이지만, 변경을 통해 수평선을 교차축, 수직선을 주축으로 만들 수 있다.
+
+```
+flex-direction: row | column etc;
+```
+
+flex성질을 가진 부모요소의 자식요소를 다시 flex로 만들수 있다.
+
+flex-wrap의 기본값은 nowrap으로, 처음에 설정한 width는 참조값이고, 나머지는 브라우저의 크기에 따라 width가 변경되는 성질을 가진다. 그러나 flex-wrap을 wrap으로 설정하면 설정한 width가 유지되어 브라우저를 작게 했을 때, 한 줄에 유지할 수 없으면 다음줄로 옮겨서 보여준다.
+
+```
+flex-wrap: nowrap | wrap | wrap-reverse | initial etc;
+```
+
+## 3.12 Fixed (positioning)
+
+position 속성을 이용하면 요소들을 다양한 위치에 둘 수 있다.  
+position 속성은 레이아웃보다는 위치를 아주 조금 위로, 아주 조금 오른쪽으로 올믹고 싶을 때 사용하는 것이다...
+
+대부분의 요소의 position의 기본값은 static으로 처음 정해진 위치에 정적(고정)으로 존재한다.
+
+position: fixed를 이용하면, 요소를 해당 위치에 계속 고정시켜둘 수 있다.  
+보통 팝업광고나 네비게이션이 스크롤바와 같이 이동하면서 고정되어 있는 것을 볼 수 있는데, 위의 속성값을 사용하고 있다.
+
+position: fixed를 사용할 때 알아야할 점은 위치를 특별히 지정하지 않으면, 레이아웃 상에서 그려진 처음 위치에 고정되어 있다는 점이다. 혹시라도 위치를 변경하고 싶으면... top, bottom, right, left 속성 등을 이용해 위치를 지정해줄 필요가 있다.
+
+보통 요소들은 같은 레이어에 존재 하기 때문에, 명시한 사이즈만큼 크기를 가지며
+서로 맞닿아서 표현이 되지만, position: fixed를 설정하면, 요소는 독립적인 레이어를 가지게 되므로 block이든 margin이든 신경쓰지 않고 지정한 취치에 고정되게 된다.  
+단... top, bottom, right, left를 별도로 지정하지 않으면, 초기 위치가 다른 요소와 겹치지 않게 표시되고 해당 위치에 고정되게 된다. 때문에 원하는 위치에 조정하기 위해서는 바로 top, bottom, rigth, left 등을 지정할 필요가 있다.
+
+### 3.13 Relative Absolute (positioning)
+
+position: relative는 상대적인 위치로, 부모요소로부터 처음 놓여진 위치를 기준으로 상하좌우로 움직이도록 지정할 때 사용한다.  
+top, bottom, left, right 속성을 통해 위치를 지정할 수 있다.
+
+position: absolute는 절대적인 위치로, 부모요소를 기준으로 하는 것이 아니라, 가장 가까운 relative성질을 가진 부모를 기준으로 이동한다. 때문에 전제조건으로 relative 성질을 가진 부모요소를 지정할 필요가 있다. 지정하지 않으면 body를 기준으로 움직인다.
+
+### 3.14 Pseudo Selectors part One
+
+pseudo selectors란 좀 더 세부적으로 요소를 선택할 때 사용하는 선택자이다.  
+지금까지는 선택자로 tag명, class명, id명을 사용했다.
+
+선택자 옆에 :를 이용하면 많은 옵션들이 나오는데, 이것들이 pseudo selector 들이다.  
+태그명에 pseudo selector를 사용하는 방법이 class나 id를 사용하는 방법보다 좋은  
+html코드를 건드리지 않아도 됐고, 순수하게 css에서 설정이 가능해서 독립성을 유지하기 때문이다.  
+단점이라면... 여러 페이지에 공통적인 속성을 적용하려면 기본 틀이 같아야 한다는 점이다...
+
+```
+ex)
+    div:last-child {
+        backgroud-color: teal;
+    }
+```
+
+```
+ex)
+:first-child {}
+:last-child {}
+
+:nth-child(2),
+:nth-child(4), {}
+
+:nth-child(even) {}
+:nth-child(2n + 1) {}
+```
+
+### 3.15 Combinators (연결자)
+
+복합선택자란, 특정 요소를 지정하기 위해서 여러 선택자를 지정하는 방법을 말한다.
+
+```
+ex)
+    p span > .mark {
+        background-color: tomato;
+    }
+```
+
+후손 선택자 (= Descendant Combinator, Descemdamt Selector)  
+` `기호(=공백문자)를 이용하여 표시하며, 부모요소에 속해 있는 모든 자식, 후손 요소들을 대상으로 선택할 때 사용한다.
+
+```
+ex)
+    div p {
+        color: teal;
+    }
+```
+
+자식 선택자 (= Child Combinator, Child Selector)  
+`>` 기호를 이용하여 표시하며, 부모 요소에 직계 자손요소를 대상으로 선택할 때 사용한다.
+
+```
+ex)
+    div > p {
+        color: red;
+    }
+```
+
+형제(= 동위) 선택자 (= Sibling Combinator, Sibling Selector)  
+형제 선택자는 같은 부모를 가진 요소들을 대상으로 선택할 때 사용한다.
+
+① `+`기호는 인접 형제 선택자로 지정한 형제의 바로 뒤에 오는 요소를 선택할 때 사용한다. (바로 뒤가 아니라면 적용되지 않음)
+
+```
+ex)
+   p + span { // 부모요소가 같은 p태그 바로 뒤에 오는 span태그를 대상으로 적용
+       text-decoration: underline;
+   }
+
+   <body>
+      <div>
+         <span> hello </span>
+         <p> ... </p>
+         <span> bye </span>  // 여기에만 적용된다.
+      </div>
+   </body>
+```
+
+### 3.16 Pseudo Selectors part Two
+
+② `~`기호는 일반 형제 선택자로 지정한 형제의 뒤 어딘가에 있는 요소를 선택할 때 사용한다.  
+인접혈제 선택자는 바로 뒤에 있어야 적용되지만, 일반형제 선택자는 바로 뒤가 아니더라도 형제 요소라면 적용이 된다.
+
+```
+ex)
+   p ~ span { // p태그와 같은 부모를 둔 모든 span을 대상으로 적용
+       text-decoration: underline;
+   }
+
+   <body>
+      <div>
+         <span> hello </span> // 적용됨
+         <p> ... </p>
+         <span> bye </span>   // 적용됨
+      </div>
+   </body>
+```
+
+input:required를 이용하면 required 속성을 가진 요소만 선택할 수 있다.  
+input:optional를 이용하여 required 속성을 가지지 않은 요소를 선택할 수 있다.
+
+```
+   ex)
+      input:optional {
+          border: 1px solid wheat;
+      }
+      input:required {
+          border: 1px solid tomato;
+      }
+
+      <body>
+         <form>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password" required>
+         </form>
+      </body>
+```
+
+속성 선택자 (= Attribute Selector)  
+요소에 지정한 속성을 이용하여 선택할 수도 있다.  
+태그맹[속성명="속성값"] { style 내용} 과 같은 형태로 지정하여 사용한다.
+
+`~=` 는 특정 값이 포함되어있으면 적용한다는 의미이다.  
+`*=` 는 특정 단어를 포함하는가에 따라 적용하기 위해 사용한다.  
+`^=` 는 특정 단어가 맨 앞에 포함되어 있는지에 따라 적용하기 위해 사용한다.  
+`$=` 는 특정 단어가 맨 뒤에 들어가 있는지에 따라 적용하기 위해 사용한다.
+
+```
+ex)
+    input[type="password"] {
+        background-color: wheat;
+    }
+
+    input[placeholder="username"] {
+        background-color: teal;
+    }
+
+    input[placeholder~="Name"] {
+        color: white;
+    }
+
+    <body>
+       <form>
+           <input type="text" placeholder="username">
+           <input type="text" placeholder="First Name">
+           <input type="text" placeholder="Last Name">
+           <input type="password" placeholder="password" required>
+        </form>
+    </body>
+```
+
+### 3.17 States
+
+:active는 마우스로 특정 요소를 클릭한 상태 등 무언가 활성화되어 있을 때 작동한다.  
+:hover는 마우스가 올라가면 반응하도록 만든다.  
+:visited는 클릭했거나 방문한적 있는 링크의 색상을 변경하는 등에 쓰인다.  
+:focus 는 focused인 상태의 요소에 적용된다.  
+:focus-within은 focused인 자식을 가진 부모 요소에 적용된다.
+
+## 3.18 Recap
+
+::placeholder는 placeholder 속성이 설정되어 있을 때 적용해주는 pseudo selector이다.  
+::selection은 마우스를 이용해 선택했을 때 반응하도록 만들 때 사용하는 pseudo selector이다.  
+::first-letter은 첫번째 문자  
+::first-line은 첫번째 문장
+
+### 3.19 Colors and Variables(custom property)
+
+색상을 지정하는 방법으로 3가지를 제공한다.  
+① 16진수를 통한 지정: #ffffff  
+② RGB를 통한 지정: rgb(252, 206, 0);, rgba(252, 206, 0, 0.7)  
+③ 색상이름을 통한 지정: teal, tomato;
+
+CSS에서도 Variables(=custom property)를 선언하고 사용할 수 있다.  
+:root는 기본적으로 모든 document의 뿌리가 된다.  
+아래와 같이 :root에 추가하면, document의 root에 저장하게 되므로 어디서든 사용이 가능해진다.
+
+```
+:root {
+    --main-color: #fcce00;
+    --default-border: 1px solid var(--main-color);
+}
+
+span {
+    color: var(--main-color);
+    border: var(--default-border);
+}
+```

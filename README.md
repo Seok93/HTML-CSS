@@ -44,11 +44,11 @@
 ## HTML/CSS 연습
 
 ### 1. kokoa-clone with Nomad Coders
-① flex 활용하기   
+#### 1-1 flex 활용하기   
 <img src="https://user-images.githubusercontent.com/32609010/95164894-deb15180-07e5-11eb-962d-6ec798a466e8.PNG" width="50%" height="50%">
 
-② pseudo selectors와 position 활용하기   
+#### 1-2 pseudo selectors와 position 활용하기   
 <img src="https://user-images.githubusercontent.com/32609010/95165298-a9593380-07e6-11eb-9325-dbfde871b42b.PNG" width="50%" height="40%">
 
-③ transform과 animation 활용하기   
+#### 1-3 transform과 animation 활용하기   
 <img src="https://user-images.githubusercontent.com/32609010/95165749-985cf200-07e7-11eb-8379-648d14830cda.gif" width="50%" height="50%">

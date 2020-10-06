@@ -1,9 +1,9 @@
 # 출처
 
-[【노마드코더 코코아톡 클론코딩】](https://nomadcoders.co/)   [【노마드코더 공식 유튜브】](https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ)
+[【노마드코더 코코아톡 클론코딩】](https://nomadcoders.co/) [【노마드코더 공식 유튜브】](https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ)
 
-kokoa-clone은 노마드코더 공식홈페이지의 코코아톡 클론코딩 강의를 수강하며 배운 내용과 실습코드를 정리한 내용이다.   
-좀 더 자세한 내용과 실습 영상을 보고 싶으면 공식홈페이지에서 코코아톡 클론코딩을 보는 것을 추천한다.　　　
+kokoa-clone은 노마드코더 공식홈페이지의 코코아톡 클론코딩 강의를 수강하며 배운 내용과 실습코드를 정리한 내용이다.  
+좀 더 자세한 내용과 실습 영상을 보고 싶으면 공식홈페이지에서 코코아톡 클론코딩을 보는 것을 추천한다.
 
 # 코코아톡 클론 코딩 강의 내용 요약
 
@@ -13,14 +13,15 @@ kokoa-clone 코딩은 카카오톡 UI를 웹으로 표현해보는 연습이다.
 
 ### 1.3 what makes a website
 
-웹사이트는 단지 텍스트 파일일 뿐이다.   
-브라우저가 웹사이트의 텍스트들을 읽어서, 평소 우리가 보는 웹사이트를 만들어준다.   
+웹사이트는 단지 텍스트 파일일 뿐이다.  
+브라우저가 웹사이트의 텍스트들을 읽어서, 평소 우리가 보는 웹사이트를 만들어준다.
 
-우린 정확한 위치에 정확한 content가 나오도록 텍스트로 명령을 내리고 브라우저는 개발자가 적어둔 텍스트를 해석하면 웹페이지를 만든다.   
+우린 정확한 위치에 정확한 content가 나오도록 텍스트로 명령을 내리고 브라우저는 개발자가 적어둔 텍스트를 해석하면 웹페이지를 만든다.
 
 ### 1.4 what is HTML
 
 웹사이트는 최소 2가지 최대 3가지의 language로 구성되어 있다.
+
 1. HTML
 2. CSS
 3. JS
@@ -754,4 +755,177 @@ span {
     color: var(--main-color);
     border: var(--default-border);
 }
+```
+
+### 4.0 Transitions part One
+
+예전에는 CSS에 효과를 주기 위해 JS를 활용해야했지만, 지금은 CSS 자체만으로 CSS를 고급지게 표현할 수 있도록 Transition, Animation, Transformation 등의 기능이 생겼다.
+
+Transition은 영어단어로 변화, 이행, 변천 등이라는 뜻을 가지고 있다.  
+Transition이란 어떤 상태에서 다른 상태로의 '변화'를 애니메이션으로 만드는 방법이다.  
+Transition은 state에 따라 바뀌는 property를 갖고 있으면 사용할수 있다.  
+Transition이라는 속성은 state가 없는 요소에 붙여야한다.  
+transition에 지정하는 속성은 hover와 같이 무언가 상태가 변하는 속성을 대상으로 실행해야 한다!
+
+Transition, Animation, Transformation을 쓰지 않고, hover와 같은 state를 통해 만들면 변화가 너무 이쁘게 보이지 않을 수 있다. 때문에 hover로 만들더라도, state가 붙지 않는 쪽에 transition을 추가해서 부드럽게 만들 필요가 있다.
+
+꼭 명심해야할 2가지
+
+① tag와 tag:state의 구성으로 이루어지며, transition 속성은 tag 쪽에 넣어줘야한다.  
+② tag:state 부분에 변화를 주기 위한 속성만이 transition에서 지정가능한 속성이 된다.
+
+```
+ex)
+    a{
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        transition: background-color 5s ease-in-out, color 5s ease-in-out; // 원하는 속성만 지정하여 변화를 조절하는 방법
+        <!-- transition: all 5s ease-in-out; --> // 변경되는 전체 속성을 한 번에 지정하는 방법
+    }
+
+    a:hover {
+        color: tomato;
+        backgraound-color: wheat;
+    }
+
+    <body>
+        <a href="#"> Go Home</a>
+    </body>
+```
+
+### 4.1 Transition part Two
+
+transition에 지정하는 ease-in function은 브라우저에게 애니메이션이 어떻게 변화할지 말해줄 때 사용한다.  
+ease-in function 뿐만 아니라, linear, ease-out, ease-in-out 등 다양한 function을 제공해준다.  
+만약에 커스터마이징하고 싶다면, cubic-bezier(06, 0 , 0.735, 0.045); 를 통해 지정할 수 있다.
+
+### 4.2 Transformations
+
+transformation은 변형을 뜻하는 단어이다.  
+transformation은 어떤 요소를 '변형'시킬 때 쓰는 속성값이다.
+
+transformation은 box 요소를 변형시키지 않는다. → margin, padding이 적용되지 않음... 일종의 3D Transformation이다.  
+다시 말해 transformation을 지정하면 box와는 독립적으로 변형(translate, rotate, scale, perspective, matrix etc)을 이룬다.
+
+transform속성을 trasition속성과 같이 사용하면 재미있는 효과(애니메이션 같은...)를 낼 수 있다.  
+CSS에 있는 모든 애니메이션은 GPU에 의해 돌아간다.
+
+```
+ex)
+    img {
+        border: 10px solid black;
+        border-radius: 50%;
+        transition: transform 2s ease-in-out;
+    }
+
+    img:hover {
+        transform: rotateY(360deg) scale(0.5);
+    }
+
+    <body>
+        <img src="img/logo.jpg" />
+    </body>
+```
+
+### 4.3 Animations part One
+
+animation은 transition처럼 state의 변화 없이도 지속적으로 움직이도록 만들 때 사용한다.  
+animation을 만들기 위해서는 @keyframes를 적으면 된다.
+
+```
+@keyframes 애니메이션명{
+    기능
+}
+
+```
+
+keyframes에는 2가지 옵션이 있다.  
+① from{} to{} : A부터 B까지 애니메이션을 적용할 때  
+② 0%{} 50%{} 100%{}: 여러 단계로 나눠서 애니메이션을 적용할 때
+
+```
+ex)
+    @keyframes superSexyCoinFilp {
+        from {
+            transform: rotateY(0);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    img {
+        border: 10px solid black;
+        border-radius: 50%;
+        animation: superSexyCoinFilp 2s ease-in-out infinite;
+    }
+
+    <body>
+        <img src="img/logo.jpg" />
+    </body>
+```
+
+### 4.4 Animations part Two
+
+② 0%{} 50%{} 100%{}: 여러 단계로 나눠서 애니메이션을 적용할 때  
+0~100에서 원하는 단계를 여러개로 쪼갤 수 있다. (0, 25, 50, 75, 100) (0, 10, .... , 90, 100)
+
+```
+ex)
+    @keyframes superSexyCoinFilp {
+        0% {
+            transform: rotateY(0);
+        }
+        50% {
+            transform: rotateY(360deg) translateX(100ox);
+        }
+        100% {
+            transform: rotateY(0);
+        }
+    }
+    img {
+        border: 10px solid black;
+        border-radius: 50%;
+        width: 200px;
+        animation: superSexyCoinFilp 2s ease-in-out infinite;
+    }
+
+    <body>
+        <img src="img/logo.jpg" />
+    </body>
+```
+
+## 4.5 Media Queries
+
+Media Query는 반응형 앱을 만들 때 사용하며, 사용자의 스크린 크기에 따라 디자인이 변하도록 만들 때 사용한다.
+
+오직 CSS만을 이용해서, 내가 만든 웹사이트를 보고 있는 사용자의 스크린 사이즈를 알 수 있고, 그에 맞춰 디자인을 변경해준다.
+
+핸드폰 landscape모드 (가로모드), portrait 모드 (세로모드)에 맞춰서도 변경이 가능하다.
+
+```
+ ex)
+    @media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {  // 현재 스크린이 650px 이상 750px 이하이며, 핸드폰 가로모드 일 때
+        div {
+            background-color: teal;
+        }
+    }
+
+    @media screen and (max-width: 600px) {  // 현재 스크린이 600px 이하라면
+        div {
+            background-color: tomato;
+        }
+    }
+
+    span {
+        font-size:36px;
+    }
+
+    <body>
+        <div></div>
+        <span>Please filp your phone<span>
+    </body>
 ```

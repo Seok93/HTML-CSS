@@ -1,9 +1,8 @@
 ## HTML
 
 ### 들어가기 전에...
-
-1. HTML의 tag나 attribute는 암기하지 말고 mdn에 가서 찾아가면서 사용하는게 제일 좋다. tag의 종류도 다양하고, tag에따라 지원하는 attribute도 다양하기 때문이다.
-2. mdn은 Mozilla Developer Network로 모든 tag와 해당 tag의 attribute가 전부 정리되어 있으며 예제를 통해 어떻게 실행되는지 바로 알 수 있다.
+① HTML의 tag나 attribute의 종류는 다양하므로 암기하지 말고 mdn에 가서 찾아가면서 사용하는게 좋다.   
+② mdn은 Mozilla Developer Network로 모든 tag와 해당 tag의 attribute가 전부 정리되어 있으며 예제를 통해 어떻게 실행되는지 바로 알 수 있다.
 
 ### 2장 텍스트 관련 태그
 

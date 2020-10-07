@@ -50,3 +50,6 @@
 
 #### 1-3 transform과 animation 활용하기   
 <img src="https://user-images.githubusercontent.com/32609010/95165749-985cf200-07e7-11eb-8379-648d14830cda.gif" width="50%" height="50%">
+
+#### 1-4 간단한 playlist clone 해보기
+<img src="https://user-images.githubusercontent.com/32609010/95298363-ebea4100-08b6-11eb-9dfa-1dd065b8c222.PNG" width="50%" height="40%">

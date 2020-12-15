@@ -1,19 +1,21 @@
-## 목차
+# 목차
 1\) [FLEXBOX](#1-flexbox)
 
-## ✔1 FLEXBOX
+# ✔1 FLEXBOX
 
-### 1.0 Life Before Flexbox
+## 1.0 Life Before Flexbox
 
 block은 box이기 때문에 한 라인을 다 차지하게 된다.  
 inline은 box가 아니라 element이다. 유동적인 거라서 너비와 높이가 없다.  
 inline-block은 block의 성질을 유지한채, 옆에 다른 대상이 올 수 잇도록 해준다.
 
-문제는 inline-block성질인데, 이녀석을 사용하면 box들 사이에 우리가 설정하지 않은 이상한 공간을 차지하게된다. 또한 box들에게 margin을 줘서 너비를 맞추는 과정도 힘들고, 여러 플랫폼(웹브라우저, 핸드폰, 블릿 etc)에 따라 디자인 설정이 제각각이기 때문에 너무 어려움을 주는 요소가 된다. 이러한 문제로 inline-block의 사용은 비추천이다.
+문제는 inline-block성질인데, 이녀석을 사용하면 box들 사이에 우리가 설정하지 않은 이상한 공간을 차지하게된다.   
+또한 box들에게 margin을 줘서 너비를 맞추는 과정도 힘들고, 여러 플랫폼(웹브라우저, 핸드폰, 블릿 etc)에 따라   
+디자인 설정이 제각각이기 때문에 너무 어려움을 주는 요소가 된다. 이러한 문제로 inline-block의 사용은 비추천한다.
 
 위의 문제를 간편하게 해결하기 위해 flex라는 성질이 나왔다.
 
-### 1.1~1.3 First Rule of Flexbox, Main Axis and Cross Axis, Column and Row
+## 1.1~1.3 First Rule of Flexbox, Main Axis and Cross Axis, Column and Row
 
 1\) flexbox에서는 children과 이야기하지 않는다.   
 
@@ -31,7 +33,7 @@ inline-block은 block의 성질을 유지한채, 옆에 다른 대상이 올 수
 
    * flex-direction: row; align-items: center; 를 지정할 때에는 flex container의 높이를 신경써야한다.   
 
-### 1.4 align-self and order
+## 1.4 align-self and order
 
 지금까지는 부모(flexbox container)가 어떻게 자식을 옮기는가에 대해 설명했다면, 이제는 자식 스스가 자신을 설정하는 2가지 옵션에 대해 배울 것이다.   
 부모에 설정하면 모든 자식 요소 전부에 적용되지만, 특정 자식 요소에만 적용하고 싶은 경우 사용한다.
@@ -46,7 +48,7 @@ inline-block은 block의 성질을 유지한채, 옆에 다른 대상이 올 수
       정하고 싶다면 모든 요소의 order를 조정해서 순서를 매겨줄 필요가 있다. 하나의 대상면 order을  
       설정해주면 제일 뒤로 갈 것이다.
 
-### 1.5 wrap, nowrap, reverse, align-content
+## 1.5 wrap, nowrap, reverse, align-content
 
 flex container는 자식요소들을 한 줄에 표시하려고 한다. 비록 설정되어 있는 width 크기를 변경하더라도 말이다. 이렇듯 width를 무너뜨리는 것을 방지하기 위해 설정하는 방법이 있다.
 

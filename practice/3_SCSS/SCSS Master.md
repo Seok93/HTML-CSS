@@ -1,9 +1,9 @@
-## 목차
-1\) [FLEXBOX](##flexbox)
+# 목차
+1\) [FLEXBOX](#✔1-flexbox)
 
-## FLEXBOX
+# ✔1 FLEXBOX
 
-### 1.0 Life Before Flexbox
+## 1.0 Life Before Flexbox
 
 block은 box이기 때문에 한 라인을 다 차지하게 된다.  
 inline은 box가 아니라 element이다. 유동적인 거라서 너비와 높이가 없다.  
@@ -13,7 +13,7 @@ inline-block은 block의 성질을 유지한채, 옆에 다른 대상이 올 수
 
 위의 문제를 간편하게 해결하기 위해 flex라는 성질이 나왔다.
 
-### 1.1~1.3 First Rule of Flexbox, Main Axis and Cross Axis, Column and Row
+## 1.1~1.3 First Rule of Flexbox, Main Axis and Cross Axis, Column and Row
 
 1\) flexbox에서는 children과 이야기하지 않는다.   
 

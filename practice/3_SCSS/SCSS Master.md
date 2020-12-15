@@ -1,7 +1,7 @@
 ## 목차
-1\) FLEXBOX
+1\) [FLEXBOX](✔️1-FLEXBOX)
 
-## <div id="#flex">✔️1 FLEXBOX<div>
+## ✔️1 FLEXBOX
 
 ### 1.0 Life Before Flexbox
 

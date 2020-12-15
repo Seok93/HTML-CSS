@@ -1,7 +1,7 @@
 ## 목차
-1\) [FLEXBOX](##✔️1-flexbox)
+1\) [FLEXBOX](##flexbox)
 
-## ✔️1 FLEXBOX
+## FLEXBOX
 
 ### 1.0 Life Before Flexbox
 

@@ -20,12 +20,12 @@ inline-block은 block의 성질을 유지한채, 옆에 다른 대상이 올 수
    * flex box에서 대상의 위치를 변경하고 싶으면, flexbox container를 만들어야 한다. flexbox container는 parent가 되고, 내부에 위치한 태그들이 children이 된다.  그렇다고 후손까지 옮겨주는 것은 아니다.   
    * flex box를 설정한 parent에 여러 속성을 설정하면, children들의 위치가 조정된다.   
     
-2\) Flexbox는 나열할 방향을 정할 수 있다. : flex-direction: row (default) | column | row-reverse … ;  
+2\) Flexbox는 나열할 방향을 정할 수 있다. : ```flex-direction: row (default) | column | row-reverse … ;```  
 
    * row일 때 주축: 가로, 교차축: 세로   
    * column일 때 주축: 세로, 교차축: 가로      
     
-3\) 주축(main axis)을 기준으로 대상을 움직일 수 있다. : justify-content: space-evenly | center | … ;   
+3\) 주축(main axis)을 기준으로 대상을 움직일 수 있다. : `justify-content: space-evenly | center | … ;   `
 
 4\) 교차축(cross axis)을 기준으로 대상을 움직일 수 있다. : align-items: center | … ;   
 

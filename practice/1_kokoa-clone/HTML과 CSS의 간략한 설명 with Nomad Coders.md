@@ -929,3 +929,50 @@ Media Query는 반응형 앱을 만들 때 사용하며, 사용자의 스크린 
         <span>Please filp your phone<span>
     </body>
 ```
+
+### 6.2 BEM
+
+BEM은 CSS이름을 만들 때의 명명 규칙으로, Block, Element, Modifier를 작성하는 것을 말한다.
+
+### 6.3 Font Awesome
+
+아이콘을 추가하는 데에는 두가지 옵션이 있다.
+① 직접 아이콘 만들기
+② 아이콘을 구하는 방법 (이미지를 만들거나, 이미지를 추출하거나 svg파일을 이용)
+
+font awesome과 heroicons 추천
+
+### 6.5 Status Bar CSS
+
+Goole fonts에 가서 원하는 font를 선택해서 사용할 수 있고, 스타일 옵션도 여러개가 있는데 사용할 것만 선택해서 경량화 하는 것도 중요하다.
+
+CSS hack 기술이란 CSS의 결함을 이용하여 작업하는 방법으로, 문제가 있어보이는 코드가 어떤 이유에서인지 작동이 되는 현상을 말한다.
+
+### 6.6 Sign Up Screen part Three
+
+reset css 2.0은 브라우저가 자동으로 넣어주는 css를 모두 없애주는 css파일이다. 인터넷에서 검색해서 넣어주면 된다.
+
+@import 명령으롤 통해 reset.css를 다른 css파일에 넣어주는게 좋다. 그 이유는 html에 link를 여러줄 만들고 싶지 않은 점도 있지만, 매번 추가하는 것보다 원하는 css파일을 추가할 때 자동으로 reset.css파일도 읽어들이는게 좋기 때문이다.
+
+css파일을 컴포넌트 단위로 쪼개서 필요한 곳에 디자인을 @import하는 형식으로 만드는 것이 좋다.
+
+컴포넌트 단위로 쪼개서 저장한 css 파일은 언제든지 필요할 때 재활용이 가능해진다.
+
+예를 들어서 이번에 나눈 status-bar는 모든 화면에 나오기 때문에 status-bar.css로 나눠서 필요한 컴포넌트를 계속 저장하고 사용할 수 있게 해준다.
+
+가운데에 요소를 모으기 위해서 display:flex를 사용할수도 있지만, h1이나 p와 같은 텍스트를 다룰 때에는 text-ailgn:center로 설정하는게 좋을 수도 잇다.
+
+### 6.7 Log In Form part One
+
+variables.css 파일을 만들어서 :root에 설정할 변수들을 모두 모아주자.
+해당 파일을 재사용하기 위해서 style.css에 @import해주자.
+
+CSS 스타일을 적용할 때에는 나폴레옹의 분할정복법(Divide-and-Conquer)을 적용하여 작은 단위로 나눠서 하나씩 정복해서 큰 단위를 만들어야한다!
+
+style.css 파일에는 font-family와 같이 모든 스크린에 적용될 수 있는 스타일을 써놓는게 좋다.
+
+# 6.12 Border Box
+
+box-sizing: border-box;은 css에게 box 자체의 사이즈를 변경하지말고 padding과 box의 px가 조정되어있다면 기존에 설정한 box의 사이즈를 유지해주라는 의미로 사용한다.
+
+# 6.13 Navigation Bar part Three

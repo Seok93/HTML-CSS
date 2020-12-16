@@ -36,7 +36,7 @@ inline-block은 block의 성질을 유지한채, 옆에 다른 대상이 올 수
 
 위의 문제를 간편하게 해결하기 위해 flex라는 성질이 나왔다.
 
-## 1.1~1.3 First Rule of Flexbox, Main Axis and Cross Axis, Column and Row
+## 1.1\~1.3 First Rule of Flexbox, Main Axis and Cross Axis, Column and Row
 
 1\) flexbox에서는 children과 이야기하지 않는다.   
 
@@ -83,7 +83,7 @@ flex-wrap을 통해 크기를 보장받으면, 자식 요소들이 크기에 맞
 
 flex-wrap 속성에 의해 자동 개행된 자식 요소간의 상하 간격을 조절: `align-content: flex-start | … ;`
 
-## 1.6~1.7 flex-grow, flex-shrink, flex-basis, flex-flow
+## 1.6\~1.7 flex-grow, flex-shrink, flex-basis, flex-flow
 align-self, order와 더불어 flex-grow, flex-shrink, flex-basis는 child에게 줄 수 있는 속성이다.
 flex-grow와 flex-shrink는 반응형 디자인(responsive design)을 할 때 유용하게 사용된다.
 
@@ -112,8 +112,8 @@ flex-grow와 flex-shrink는 반응형 디자인(responsive design)을 할 때 �
    * flex-direction과 flex-wrap이 자주 같이 사용되기 때문에, 두개의 역할을 대신하는 flex-flow가 생겼다.
    * 이 속성은 공백문자를 이용하여 두 속성의 값들을 인자로 받는다.
 
+## 1.8\~1.9 FlexboxFroggy 1\~24
 
-## 1.8~1.9 Flexbox Froggy 1~24
 [flexbox froggy](http://flexboxfroggy.com/)를 이용하여 연습하기
 
 # ✔2 GRID

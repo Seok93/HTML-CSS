@@ -52,3 +52,9 @@
 
 #### 1-4 간단한 playlist clone 해보기
 <img src="https://user-images.githubusercontent.com/32609010/95298363-ebea4100-08b6-11eb-9dfa-1dd065b8c222.PNG" width="50%" height="40%">
+
+#### 1-5 book store clone 해보기
+<img src="./practice/1_kokoa-clone/5_bookstore-clone/result.PNG" width="50%" height="40%">
+
+#### 1-6 playlist2 clone 해보기
+<img src="./practice/1_kokoa-clone/6_playlist2-clone/result.PNG" width="50%" height="40%">

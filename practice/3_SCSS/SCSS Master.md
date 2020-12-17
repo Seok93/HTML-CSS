@@ -157,7 +157,7 @@ grid-template-columns: auto 200px; // auto는 모든 공간을 다 사용한다.
 ```
 
 1\) 화면의 레이아웃을 설정하는 방법 : `grid-template-area: "대상 나열";`   
-grid-template-area에 사용할 자식 요소에 이름을 붙이는 방법:  `grid-area: header;`
+2\) grid-template-area에 사용할 자식 요소에 이름을 붙이는 방법:  `grid-area: header;`
    * grid-template-area는 디자인의 layout을 잡아주기 때문에 엄청 유용하다!   
    * grid-template-area은 display:grid가 설정된 부모요소에서 사용한다.
    * grid-area는 자식 요소에 설정하며, 어떤 자식이 어느 위치에 올 것인가   
@@ -209,7 +209,8 @@ grid-template-area에 사용할 자식 요소에 이름을 붙이는 방법:  `g
 }
 ```
 
-**【예시 결과이미지】**
+**【예시 결과이미지】**   
+<img src="https://user-images.githubusercontent.com/32609010/102449207-1c98e480-4077-11eb-9143-920b4a71a006.PNG" width="50%" height="50%"/>
 
 
 ## 2.4~2.5 Rows and Columns with Shortcuts
@@ -240,43 +241,6 @@ grid-column-start/grid-column-end와 grid-row-start/grid-row-end의 설정 방�
 }
 ```
 얼핏 보면 column을 1번부터 4번, 즉 4칸을 할당하는 것처럼 보일 수 있다. 하지만 위의 숫자의 의미는 grid의 경계선인 라인번호를 의미한다. 경계선 라인번호 1~4는 실제로 3칸을 할당한다는 것을 알 수 있다.
-
-
-**【예시 결과】**
-<div style="
-   display:flex;
-   justify-content:center;
-">
-   <div style="
-      display:grid;
-      grid-template-columns: repeat(4, 100px);
-      grid-template-rows: repeat(2, 50px);
-      text-align: center;
-   ">
-      <div style="
-         border: 1px solid black;
-         border-left: 2px solid #D46C4F;
-         background-color: #FAAC6A;
-      "> CELL 1</div>
-      <div style="
-         border: 1px solid black;
-         background-color: #FAAC6A;
-      ">CELL 2</div>
-      <div style="
-         border: 1px solid black;
-         background-color: #FAAC6A;
-      ">CELL 3</div>
-      <div style="
-         border: 1px solid black;
-         border-left: 2px solid #D46C4F;
-      ">CELL 4</div>
-      <div style="border: 1px solid black;">CELL 5</div>
-      <div style="border: 1px solid black;">CELL 6</div>
-      <div style="border: 1px solid black;">CELL 7</div>
-      <div style="border: 1px solid black;">CELL 8</div>
-   </div>
-</div>
-<br>
 
 3\) start와 end를 한 번에 지정하는 방법
 ```
@@ -336,7 +300,8 @@ grid-template-area 처럼 grid-area를 통해  자식요소에 이름일 지어�
 참고로 1fr 1fr 1fr 1fr 부분은 repeat(4, 1fr)로 변경이 불가능하다. Grid-template에서는 repeat가 적용되지 않기 때문이다.
 
 ```
-[부모요소] grid-template: 
+[부모요소]
+grid-template: 
 	[header-start] "header header header header" 1fr [header-end]
 	[content-start] "content content content nav" 2fr [content-end]
 	[footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr;

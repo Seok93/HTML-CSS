@@ -147,7 +147,7 @@ flex-grow와 flex-shrink는 반응형 디자인(responsive design)을 할 때 �
    * flex-direction과 flex-wrap이 자주 같이 사용되기 때문에, 두개의 역할을 대신하는 flex-flow가 생겼다.
    * 이 속성은 공백문자를 이용하여 두 속성의 값들을 인자로 받는다.
 
-## 1.8\~1.9 FlexboxFroggy 1\~24
+## 1.8~1.9 FlexboxFroggy 1\~24
 
 [flexbox froggy](http://flexboxfroggy.com/)를 이용하여 연습하기
 
@@ -439,6 +439,5 @@ min-content와 max-content는 content가 가지는 최소크기와 최대 크기
 grid-template-columns: repeat(5, minmax(max-content, 1fr));
 ```
 
-## 2.14 Grid Garden part One
-## 2.15 Grid Garden part Two
+## 2.14~2.15 Grid Garden
 http://cssgridgarden.com/ 실습하기

@@ -26,10 +26,34 @@
 - [x] [자식요소] grid-row-end
 - [x] [자식요소] grid-column
 - [x] [자식요소] grid-row
+- [x] [부모요소] justify-items
+- [x] [부모요소] align-items
+- [x] [부모요소] place-items
+- [x] [부모요소] justify-content
+- [x] [부모요소] align-content
+- [x] [부모요소] place-content
+- [x] [자식요소] justify-self
+- [x] [자식요소] align-self
+- [x] [자식요소] place-self
 - [x] [부모요소] grid-template
+- [x] [보무요소] grid-auto-rows
+- [x] [부모요소] grid-auto-columns
+- [x] [부모요소] grid-auto-flow
+- [x] [자식요소] order
+
+3\) Keywords & Functions:
+- [x] repeat()
+- [x] fr
+- [x] minmax
+- [x] auto-fit
+- [x] auto-fill
+- [x] min-content
+- [x] max-content
+
 
 5\) Clone or Practice Site
 - [flexbox froggy](http://flexboxfroggy.com/) Flexbox 연습을 위한 사이트
+- [grid garden](http://cssgridgarden.com/) Grid 연습을 위한 사이트
 
 
 # ✔1 FLEXBOX
@@ -123,7 +147,7 @@ flex-grow와 flex-shrink는 반응형 디자인(responsive design)을 할 때 �
    * flex-direction과 flex-wrap이 자주 같이 사용되기 때문에, 두개의 역할을 대신하는 flex-flow가 생겼다.
    * 이 속성은 공백문자를 이용하여 두 속성의 값들을 인자로 받는다.
 
-## 1.8\~1.9 FlexboxFroggy 1\~24
+## 1.8~1.9 FlexboxFroggy 1\~24
 
 [flexbox froggy](http://flexboxfroggy.com/)를 이용하여 연습하기
 
@@ -309,4 +333,111 @@ grid-template:
 
 위와 같이 각 row에 이름을 붙일 수도 있다. 명심해야할 것은 이름을 붙일거면 전체에 붙여야하고, 안붙일거면 전체에 안붙여져 있어야한다. 
 
+## 2.8 Place Items
+item의 의미는 grid의 셀 하나를 의미한다. items는 그러한 grid의 전체 셀들을 각각 지칭하고 있다.
+때문에 jutify-items나 align-items는 grid의 셀 각각이 내부적으로 어떻게 움직이는지를 정의해준다.
 
+```
+[부모요소] justify-items: stretch (default) | start | center | end ... etc
+```
+grid에서 주축(수평축, 가로축)을 기준으로 움직여준다.
+```
+[부모요소] align-items: stretch | start | center | end ... etc;
+```
+grid에서 교차축(수직축, 세로축)을 기준으로 요소를 움직여준다.
+
+```
+[부모요소] place-items: center(수직설정) center(수평설정);
+```
+justify-items와 align-items의 두 개의 속성을 한 번에 적용하는 단축속성이다.
+
+## 2.9 Place Content
+content의 의미는 기능을 제공하는 단위로, grid 자체를 의미한다. 때문에 justify-content와 align-content는 grid 전체를 대상으로 어떻게 움직이는지를 정의해준다.
+
+```
+[부모요소] justify-content: start(default) | center | space-around ... etc
+```
+grid 전체를 수평축(가로축)을 기준으로 움직인다.
+
+```
+[부모요소] align-content: start(default) | center | end ... etc
+```
+grid 전체를 수직축(세로축)을 기준으로 움직인다.
+
+```
+[부모요소] place-content: center(수직설정) center(수평설정);
+```
+justify-content와 align-content 두개의 속성을 한 번에 적용하는 단축속성이다.
+
+## 2.10 Auto Columns and Rows
+
+1\) aling-self와 justify-self   
+items은 grid 전체에 있는 각각의 셀을 대상으로 적용하고, content는 grid 그 자체를 대상으로 적용했다면 self는 순수하게 grid 셀 하나를 대상으로 적용하는 속성이다. 개별 자식 요소에 적용하는 속성으로 grid의 자식 중 하나를 대상으로 어떻게 움직일까에 대해 정의한다.
+
+```
+[자식요소] align-self: start | center | end ... etc
+```
+지정된 grid 셀 1칸을 수직축(세로축)을 기준으로 독립적으로 움직인다.
+```
+[자식요소] justify-self: start | center | end ... etc
+```
+지정된 grid 셀 1칸을 수평축(가로축)을 기준으로 독립적으로 움직인다.
+
+```
+[자식요소] place-self: start(수직살장) center(수평설정);
+```
+align-self와 justify-content의 두 속성을 한 번에 적용하는 단축속성이다.
+
+2\) grid-auto-rows와 grid-auto-columns   
+grid-template-columns와 grid-template-rows는 자기들이 가질 행과 열을 고정으로 가지게 되는데, 가끔 DB에서 데이터가 얼마나 올지 몰라서, 고정치를 설정하지 못할 때가 있다. 이럴 때를 대비해서 지정된 범위를 초과할 때 자동으로 설정해주는 속성을 제공해준다.
+
+```
+[부모요소] grid-auto-rows : 100px
+[부모요소] grid-auto-columns: 100px
+```
+위의 두 속성은 grid-template-columns와 grid-template-rows에 설정한 행과 열의 개수를 넘어갈 때 넘어간 대상에 대하여 크기를 어떻게 할지 처리해준다.  만약 grid-template-columns와 grid-template-rows를 설정하지 않는다면 처음부터 grid-auto-rows와 grid-auto-columns이 적용된다.
+
+
+3\) grid-auto-flow
+grid는 기본적으로는 위에서 아래로(수직방향)으로 순차적으로 붙는다. 위에서 아래로 붙이기보다 좌에서 우로 붙이고 싶다면 grid-auto-flow를 통해 방향을 바꿔줄 필요가 있다. Flexbox의 flex-direction같은 것이다.
+
+```
+[부모요소] grid-auto-flow: column;
+```
+grid가 그려지는 방향을 변경해준다.
+
+## 2.11 minmax
+minmax는 최소크기와 최대크기를 지정하는 방법이다.
+
+```
+[부모요소] grid-template-columns: repeat(5, minmax(100px, 500px));
+```
+화면이 아무리 작아져도 최소크기 100px를 보장하고, 화면이 아무리 커져도 최대 크기는 500px이다. 위의 예시처럼 최소크기와 최대크기를 보장받을 때 사용한다.
+최소크기보다 화면이 작아지면 스크롤 바가 생긴다.
+
+## 2.12 auto-fit, auto-fill
+CSS grid를 이용해서 responsice 디자인을 만드는 방법으로 auto-fit와 auto-fill을 사용하는 것이다. 이 속성들은repeat function에서 사용할 수 있다.
+
+```
+[부모요소] grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+```
+auto-fit는 사용가능한 공간에 따라 유동적으로 사이즈를 조절하여 전체 공간에 딱 맞출(fit!) 때 사용한다.
+
+```
+[부모요소] grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+```
+auto-fill은 정해진 사이즈를 유지한 채(최소크기로 유지), 사이즈 조절시 나머지 공간을 다음 grid 요소가 오도록 여백을 남겨둘 때 사용한다.
+
+반응형 웹을 핸드폰으로 볼 때에는  auto-fit나 auto-fill으로 설정은 같아보이지만, 화면이 커질수록 그 차이는 명확해진다. auto-fit는 화면이 늘어나면 늘어난 공간만큼 grid의 cell들을 늘려준다. 하지만 auto-fill은 최소 크기를 유지한 채, 나머지 공간은 새롭게 grid의 cell 요소가 올 수 있도록 공간을 마련하고 있다.
+
+auto-fill은 보다 정확한 사이즈를 위한 것이고auto-fit은 유동적인 사이즈를 위한 것이다. grid-template-columns에서 auto-fit, auto-fill을 사용하면 column의 개수에 상관없이 받아들인다.
+
+## 2.13 min-content, max-content
+min-content와 max-content는 content가 가지는 최소크기와 최대 크기이다. Content는 grid 전체를 가리킨다.
+
+```
+grid-template-columns: repeat(5, minmax(max-content, 1fr));
+```
+
+## 2.14~2.15 Grid Garden
+http://cssgridgarden.com/ 실습하기

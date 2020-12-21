@@ -1,5 +1,5 @@
 # 목차
-1\) [FLEXBOX](#1-flexbox)
+1\) [FLEXBOX](#1-flexbox):
 - [x] [부모요소] flex-direction
 - [x] [부모요소] justfy-content
 - [x] [부모요소] align-items
@@ -12,7 +12,7 @@
 - [x] [자식요소] flex-basic
 - [x] [부모요소] flex-flow
 
-2\) [GRID](#2-grid)
+2\) [GRID](#2-grid):
 - [x] [부모요소] grid-template-columns
 - [x] [부모요소] grid-template-rows
 - [x] [부모요소] column-gap
@@ -50,13 +50,20 @@
 - [x] min-content
 - [x] max-content
 
+4\) [SCSS](#3-scss):
+- [x] Variables
+- [x] Nesting
+- [x] Partials
+- [x] Mixins
+- [x] Extend
+- [x] Responsive Minxins
 
-5\) Clone or Practice Site
+5\) Clone or Practice Site:
 - [flexbox froggy](http://flexboxfroggy.com/) Flexbox 연습을 위한 사이트
 - [grid garden](http://cssgridgarden.com/) Grid 연습을 위한 사이트
 
 
-# ✔1 FLEXBOX
+# 🌈1 FLEXBOX
 ## 1.0 Life Before Flexbox
 
 block은 box이기 때문에 한 라인을 다 차지하게 된다.  
@@ -151,7 +158,7 @@ flex-grow와 flex-shrink는 반응형 디자인(responsive design)을 할 때 �
 
 [flexbox froggy](http://flexboxfroggy.com/)를 이용하여 연습하기
 
-# ✔2 GRID
+# 🌈2 GRID
 ## 2.1 Life Before Grid
 Box를 옆으로 나열하거나, 가운데로 옮기거나 하는 경우에는 flexbox로 편하게 할 수 있지만
 격자 형식으로 요소들을 배치하려고 하면 까다로운 점들이 많다. 이럴 때를 대비하여 격자형식을 지원하는 grid를 지원하게 되었다.
@@ -176,8 +183,8 @@ css grid에는 `repeat()`라는 함수를 이용하여 반복적인 설정을 �
 ```
 > repeat( 반복횟수, 지정할 크기);
 
-grid-template-columns: repeat(4, 200px);
-grid-template-columns: auto 200px; // auto는 모든 공간을 다 사용한다.
+[부모요소] grid-template-columns: repeat(4, 200px);
+[부모요소] grid-template-columns: auto 200px; // auto는 모든 공간을 다 사용한다.
 ```
 
 1\) 화면의 레이아웃을 설정하는 방법 : `grid-template-area: "대상 나열";`   
@@ -243,15 +250,15 @@ grid-template-area와 grid-area를 이용하면 Layout을 편하게 만들 수 �
 
 1\) grid에서 특정 요소(Header, Content, Nav etc)의 **가로 영역**을 설정하는 방법
 ```
-> grid-column-start: 시작 라인번호 (= Line Number 1~xx);
-> grid-column-end: 끝 라인 번호;
+[자식요소] grid-column-start: 시작 라인번호 (= Line Number 1~xx);
+[자식요소] grid-column-end: 끝 라인 번호;
 ```
 grid-column-start, grid-column-end는 열의 시작과 열의 끝, 즉 가로의 길이를 설정할 때 사용한다.
 
 2\) grid에서 특정 요소(Header, Content, Nav etc)의 **세로 영역**을 설정하는 방법
 ```
-> grid-row-start: 시작 라인번호 (= Line Number 1~xx);
-> grid-row-end: 끝 라인 번호;
+[자식요소] grid-row-start: 시작 라인번호 (= Line Number 1~xx);
+[자식요소] grid-row-end: 끝 라인 번호;
 ```
 grid-row-start, grid-row-end는 행의 시작과 행의 끝, 즉 세로의 길이를 설정할 때 사용한다.
 
@@ -268,8 +275,8 @@ grid-column-start/grid-column-end와 grid-row-start/grid-row-end의 설정 방�
 
 3\) start와 end를 한 번에 지정하는 방법
 ```
-> grid-column: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
-> grid-row: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
+[자식요소] grid-column: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
+[자식요소] grid-row: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
 ```
 grid-column-start/grid-column-end와 grid-row-start/grid-row-end 방법은 속성명이 너무 길고 항상 시작과 끝을 설정해야한다는 단점이 있다. 이것을 보완하기 위한 속성이 grid-column과 grid-row이다.
 
@@ -441,3 +448,236 @@ grid-template-columns: repeat(5, minmax(max-content, 1fr));
 
 ## 2.14~2.15 Grid Garden
 http://cssgridgarden.com/ 실습하기
+
+
+# 🌈3 SCSS
+## 3.0 CSS Preprocessors and Set Up
+SCSS는 CSS preprocessor(전처리기)로 CSS가 동작하기 전에 처리한다.   
+CSS preprocessor의 종류로 대표적으로 Scss, Less, Stylus 등이 있다. 
+
+SCSS는 CSS를 프로그래밍 언어처럼 작업할 수 있게 만들어주며, syntax를 개선하는데 사용하기 좋다.
+SCSS를 사용하기 위해서는 Compile과 Build하는 단계가 필요하다. 이 단계를 위해 Gulp를 사용하는데, gulp란 compile하거나 transform해주는 nodeJS package이다.
+
+## 3.1 Variables and Nesting
+브라우저는 SCSS파일을 이해하지 못하기 때문에 HTML파일에서는 SCSS파일을 link 하는 것이 아니라, SCSS파일을 컴파일해서 만든 CSS파일을 link해야한다.
+
+1\) variables   
+CSS는 주로 사용하는 값을 변수(Variable)화하여 가져다 사용하는 기능이 있다. SCSS에서도 이러한 기능을 이용할 수 있다. 보통 SCSS에서 사용할 변수(Variable)들을 관리하기 위해 `_variable.scss파일`을 만든다. 다른 이름으로도 사용가능하나 보통 _variable.scss를 많이 사용한다.  
+
+_variable.scss에서 파일명에 들어간 _에는 의미가 있는데, CSS로 변하지 않았으면 하는 파일들에게 붙인다. _variables.scss에 변수들을 정의할 때에는 `$변수명: 변수값;` 으로 구성해서 넣어준다.
+
+```
+[파일] _variables.scss
+
+$bg: #e7473c;
+$title: 32px;
+$btn: #ff3421;
+.
+.
+.
+```
+변수가 필요한 파일에 _variables.scss파일은 import한 후 정의한 `$변수명`로 바로 사용이 가능하다. CSS처럼 var(변수명) 이런식으로 할 필요가 없다. 보통은 styles.scss에 _variables.scss를 import하여 많이 사용한다.   
+
+2\) nesting   
+Nesting은 CSS적용을 원하는 element를 더 정확하게 지정할 수 있도록 해준다.
+Nesting은 HTML의 코드 구조(부모-자식관계)처럼 CSS를 설정할 수 있는 방법으로,  CSS 설정 안에 CSS설정을 넣는 방법을 말한다.
+
+```
+> 기존의 CSS 설정 방식
+
+.box {
+    margin-top: 20px;
+}
+.box:hover {
+    background-color: coral;
+}
+.box h2 {
+    color: blue;
+}
+.box button {
+    color: red;
+}
+```
+기존에는 .box 클래스를 같는 요소(element)의 자식 요소 h2, button 등을 지칭하기 위해 .box라는 부분을 중복해서 지정해줘야 했다. 하지만 Nesting을 사용하면 이 중복을 없애고 원하는 대상을 그대로 지칭할 수 있게 된다.
+
+```
+> SCSS의 Nesting
+
+.box {
+    margin-top: 20px;
+
+    &:hover {
+        background-color: coral;
+    }
+(
+    h2 {
+        color: blue;
+    }
+
+    button {
+        color: red;
+    }
+}
+```
+
+`&기호`는 Nesting에서 자기 자신(선택자)을 의미한다.
+
+## 3.2 Mixins
+Mixin은 SCSS functionality(=기능성)를 재사용할 수 있게 해준다. Mixin은 상황에 따라 다르게 반응하도록 CSS를 조절 하고 싶을 때 사용한다. Mixin은 CSS를 프로그래밍하듯 다룰 수 있게 해주며, 함수처럼 사용하게 해준다.
+
+Nodejs에서 mixin은 HTML코드를 재사용하는데 사용했다면, SCSS에서 mixin은 CSS코드를 재사용하는데 사용한다.
+
+`_mixins.scss파일`을 만들고 재사용할 내용을 정의하면 된다.
+Mixin을 정의할 때에는 `@mixin 함수명($변수) { CSS내용 }`의 구조를 가진다.
+아래와 같이 if-else문도 사용할 수 있고, $word처럼 변수를 받아올 수 도 있다.
+```
+[파일] _mixins.scss
+
+@mixin link($word) {
+    text-decoration: none;
+    display: block;
+
+    @if $word == "odd" {
+        color: blue;
+    } @else if $word == "even" {
+        color: red;
+    } @else {
+        color: black;
+    }
+}
+```
+_mixins.scss에 정의한 내용을 사용하기 위해서 styles.scss에 추가해야하고, `@include`를 이용하여 _mixins.scss에 정의한 스타일을 함수처럼 호출하여 사용할 수 있다.
+
+```
+[파일] styles.scss
+
+@import "_variables";
+@import "_mixins";
+
+a {
+    margin-bottom: 10px;
+    &:nth-child(odd) {
+        @include link("odd");
+    }
+    &:nth-child(even) {
+        @include link("even");
+    }
+}
+```
+
+## 3.3 Extends
+Mixin이 상황에 따라 다르게 적용되도록 코딩하고 싶을 때 사용했다면, Extend는 같은 코드를 중복하고 싶지 않을 때 or 다른 코드를 확자앟고 싶을 때 사용한다.
+mixin이든 extends든 둘 다 코드의 재사용성을 제공한다.
+
+`_extends_scss파일`에 정리해도 되고,  기능별 고유 파일(_button.scss)로 정리해도 된다. Extend를 정의할 때에는 `%extend명 { 내용 }`구조를 가진다.
+```
+[파일] _extends.scss
+
+%button {
+    font-family: inherit;
+    border-radius: 7px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background-color: peru;
+    color: white;
+    font-weight: 500;
+}
+```
+_extends.scss를 사용하기 위해서는 사용할 위치에 @import를 하고, `@extend`를 이용하여 _extends.scss에 정의한 스타일을 가져다 사용할 수 있다. 사용할 때에도 %extend명을 통해 사용한다.
+```
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+
+a {
+    @extend %button;
+    text-decoration: none;
+}
+button {
+    @extend %button;
+    border: none;
+}
+```
+
+## 3.4 Awesome Mixins and Conclusions
+Mixin 기능중에 @content라는 아주 awesome한 기능이 있다!
+`@content`는 컨텐츠를 그대로 포함한다는 것인데, 여기서 컨텐츠는 css 속성을 말한다.
+```
+[파일] _mixin.scss
+
+@mixin responsive {
+    @content;
+}
+```
+```
+[파일] styles.scss
+
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+
+a {
+    @include responsive {
+        text-decoration: none;
+    }
+}
+```
+
+위의 예시처럼 a태그에서 responsive라는 mixin를 사용할 때 설정한 내용 자유롭게 설정하여 그대로 적용되도록 @content를 설정할 수 있다. A태그에 responsive mixin함수를 불러서 내용을 적으면 @content부분을 대체하여 적용된다.
+
+```
+[파일] _mixin.scss
+
+@mixin responsive($device) {
+    @if $device == "iphone" {
+        @media screen and (min-width: $minIphone) and (max-width: $maxIphone) {
+            @content;
+        }
+    } @else if $device == "tablet" {
+        @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+            @content;
+        }
+    } @else if $device == "iphome-l" {
+        @media screen 
+         and (min-width: $minIphone) 
+         and (max-width: $maxIphone) 
+         and (orientation: landscape) {
+            @content;
+        }
+    } @else if $device == "ipad-l" {
+        @media screen 
+         and (min-width: $minTablet) 
+         and (max-width: $maxTablet) 
+         and (orientation: landscape) {
+            @content;
+        }
+    }
+}
+```
+```
+[파일] styles.scss
+
+@import "_variables";
+@import "_mixins";
+@import "_extends";
+
+h1 {
+    color: red;
+    @include responsive("iphone") {
+        color: yellow;
+    }
+    @include responsive("iphone-l") {
+        color: orange;
+    }
+    @include responsive("tablet") {
+        color: green;
+    }
+    @include responsive("ipad-l") {
+        color: greenyellow;
+    }
+}
+```
+위 처럼 크기에 따라 다양하게 적용하도록 응용하여 사용할 수도 있다.
+
+Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 Bourbon, Sass MediaQueries, animate.scss 등을 추천한다.

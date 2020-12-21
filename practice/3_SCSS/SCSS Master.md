@@ -183,8 +183,8 @@ css grid에는 `repeat()`라는 함수를 이용하여 반복적인 설정을 �
 ```
 > repeat( 반복횟수, 지정할 크기);
 
-grid-template-columns: repeat(4, 200px);
-grid-template-columns: auto 200px; // auto는 모든 공간을 다 사용한다.
+[부모요소] grid-template-columns: repeat(4, 200px);
+[부모요소] grid-template-columns: auto 200px; // auto는 모든 공간을 다 사용한다.
 ```
 
 1\) 화면의 레이아웃을 설정하는 방법 : `grid-template-area: "대상 나열";`   
@@ -250,15 +250,15 @@ grid-template-area와 grid-area를 이용하면 Layout을 편하게 만들 수 �
 
 1\) grid에서 특정 요소(Header, Content, Nav etc)의 **가로 영역**을 설정하는 방법
 ```
-> grid-column-start: 시작 라인번호 (= Line Number 1~xx);
-> grid-column-end: 끝 라인 번호;
+[자식요소] grid-column-start: 시작 라인번호 (= Line Number 1~xx);
+[자식요소] grid-column-end: 끝 라인 번호;
 ```
 grid-column-start, grid-column-end는 열의 시작과 열의 끝, 즉 가로의 길이를 설정할 때 사용한다.
 
 2\) grid에서 특정 요소(Header, Content, Nav etc)의 **세로 영역**을 설정하는 방법
 ```
-> grid-row-start: 시작 라인번호 (= Line Number 1~xx);
-> grid-row-end: 끝 라인 번호;
+[자식요소] grid-row-start: 시작 라인번호 (= Line Number 1~xx);
+[자식요소] grid-row-end: 끝 라인 번호;
 ```
 grid-row-start, grid-row-end는 행의 시작과 행의 끝, 즉 세로의 길이를 설정할 때 사용한다.
 
@@ -275,8 +275,8 @@ grid-column-start/grid-column-end와 grid-row-start/grid-row-end의 설정 방�
 
 3\) start와 end를 한 번에 지정하는 방법
 ```
-> grid-column: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
-> grid-row: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
+[자식요소] grid-column: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
+[자식요소] grid-row: 시작 라인번호 / 끝 라인번호 | span 셀 개수;
 ```
 grid-column-start/grid-column-end와 grid-row-start/grid-row-end 방법은 속성명이 너무 길고 항상 시작과 끝을 설정해야한다는 단점이 있다. 이것을 보완하기 위한 속성이 grid-column과 grid-row이다.
 

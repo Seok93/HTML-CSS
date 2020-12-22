@@ -58,9 +58,22 @@
 - [x] Extend
 - [x] Responsive Minxins
 
-5\) Clone or Practice Site:
-- [flexbox froggy](http://flexboxfroggy.com/) Flexbox 연습을 위한 사이트
-- [grid garden](http://cssgridgarden.com/) Grid 연습을 위한 사이트
+5\) Practice flexbox and grid:
+- [x] [flexbox froggy](http://flexboxfroggy.com/) Flexbox 연습을 위한 사이트
+- [x] [grid garden](http://cssgridgarden.com/) Grid 연습을 위한 사이트
+
+6\) [To Clone](#4-clone):
+- [x] [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
+- [ ] [https://paint-box.com/](https://paint-box.com/)
+- [ ] [http://10x19.co/](http://10x19.co/)
+- [ ] [http://www.z-o-o.fr/](http://www.z-o-o.fr/)
+- [ ] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
+- [ ] [https://tolv.dk/](https://tolv.dk/)
+- [ ] [https:://rodicdavidson.co.uk/](https:://rodicdavidson.co.uk/)
+- [ ] [https://beige.de/](https://beige.de/)
+- [ ] [http://donicaida.com/](http://donicaida.com/)
+- [ ] [https://canalstreet.market/](https://canalstreet.market/)
+- [ ] [https://wonhumdred.com/](https://wonhumdred.com/)
 
 
 # 🌈1 FLEXBOX
@@ -681,3 +694,8 @@ h1 {
 위 처럼 크기에 따라 다양하게 적용하도록 응용하여 사용할 수도 있다.
 
 Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 Bourbon, Sass MediaQueries, animate.scss 등을 추천한다.
+
+
+# 🌈4 Clone
+## 4.1 [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
+<img src="https://user-images.githubusercontent.com/32609010/102862259-299d4580-4474-11eb-9e21-53433446ed1c.gif" width="50%" height="50%">

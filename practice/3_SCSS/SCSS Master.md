@@ -117,8 +117,9 @@ inline-block은 block의 성질을 유지한채, 옆에 다른 대상이 올 수
 1\) align-items처럼 교차축을 대상으로 스스로를 움직이는 방법: `align-self: center | … ;`
 
    * align-items처럼 교차축을 대상으로 움직이기 때문에 flex container의 높이가 설정되어 있지 않으면  
-      적용 되지 않는다.
-2\) html을 변경할 수 없을 때, 자식들 간의 위치를 변경 할 수 있는 방법: `order: 0 (default) | 양수 | 음수;`
+      적용 되지 않는다.   
+      
+2\) html을 변경할 수 없을 때, 자식들 간의 위치를 변경 할 수 있는 방법: `order: 0 (default) | 양수 | 음수;`   
 
    * flex container의 모든 자식 요소의 order은 기본적으로 0이다. 때문에 전체를 대상으로 순서를  
       정하고 싶다면 모든 요소의 order를 조정해서 순서를 매겨줄 필요가 있다. 하나의 대상면 order을  

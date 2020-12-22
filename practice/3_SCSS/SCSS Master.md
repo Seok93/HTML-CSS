@@ -698,3 +698,4 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 
 # 🌈4 Clone
 ## 4.1 [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
+<img src="https://user-images.githubusercontent.com/32609010/102862259-299d4580-4474-11eb-9e21-53433446ed1c.gif" width="50%" height="50%">

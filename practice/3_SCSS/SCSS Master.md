@@ -64,7 +64,7 @@
 
 6\) [To Clone](#4-clone):
 - [x] [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
-- [ ] [https://paint-box.com/](https://paint-box.com/)
+- [x] [https://paint-box.com/](https://paint-box.com/)
 - [ ] [http://10x19.co/](http://10x19.co/)
 - [ ] [http://www.z-o-o.fr/](http://www.z-o-o.fr/)
 - [ ] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
@@ -624,7 +624,7 @@ Mixin 기능중에 @content라는 아주 awesome한 기능이 있다!
     @content;
 }
 ```
-```
+```SCSS
 [파일] styles.scss
 
 @import "_variables";
@@ -700,3 +700,6 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 # 🌈4 Clone
 ## 4.1 [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
 <img src="https://user-images.githubusercontent.com/32609010/102862259-299d4580-4474-11eb-9e21-53433446ed1c.gif" width="50%" height="50%">
+
+## 4.2 [https://paint-box.com/](https://paint-box.com/)
+<img src="https://user-images.githubusercontent.com/32609010/103049345-e4445980-45d4-11eb-85a6-01b5e7ef61ec.gif" width="50%" height="50%">

@@ -67,7 +67,7 @@
 - [x] [https://paint-box.com/](https://paint-box.com/)
 - [x] [http://10x19.co/](http://10x19.co/)
 - [x] [http://www.z-o-o.fr/](http://www.z-o-o.fr/)
-- [ ] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
+- [x] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
 - [ ] [https://tolv.dk/](https://tolv.dk/)
 - [ ] [https:://rodicdavidson.co.uk/](https:://rodicdavidson.co.uk/)
 - [ ] [https://beige.de/](https://beige.de/)
@@ -709,3 +709,6 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 
 ## 4.4 [http://www.z-o-o.fr/](http://www.z-o-o.fr/)
 <img src="https://user-images.githubusercontent.com/32609010/103194597-7de86f80-4923-11eb-9cf2-71fd8149d4e9.gif" width="50%" height="50%">
+
+## 4.5 [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
+<img src="https://user-images.githubusercontent.com/32609010/103340052-7dd4a500-4ac6-11eb-9ddc-6c3cc357c59a.gif" width="50%" height="50%">

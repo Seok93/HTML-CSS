@@ -711,4 +711,4 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 <img src="https://user-images.githubusercontent.com/32609010/103194597-7de86f80-4923-11eb-9cf2-71fd8149d4e9.gif" width="50%" height="50%">
 
 ## 4.5 [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
-<img src="" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/32609010/103340052-7dd4a500-4ac6-11eb-9ddc-6c3cc357c59a.gif" width="50%" height="50%">

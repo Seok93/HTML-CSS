@@ -720,4 +720,4 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 <img src="https://user-images.githubusercontent.com/32609010/103493509-255e2880-4e75-11eb-8d34-ecadce308853.gif" width="50%" height="50%">
 
 ## 4.8 [https://beige.de/](https://beige.de/)
-<img src="" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/32609010/103609920-40f32d00-4f62-11eb-9c04-c7b9c03e954f.gif" width="50%" height="50%">

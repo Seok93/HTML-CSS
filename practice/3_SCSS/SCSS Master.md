@@ -70,7 +70,7 @@
 - [x] [https://schwartzmedia.com.au/](https://schwartzmedia.com.au/)
 - [x] [https://tolv.dk/](https://tolv.dk/)
 - [x] [https://rodicdavidson.co.uk/](https://rodicdavidson.co.uk/)
-- [ ] [https://beige.de/](https://beige.de/)
+- [x] [https://beige.de/](https://beige.de/)
 - [ ] [http://donicaida.com/](http://donicaida.com/)
 - [ ] [https://canalstreet.market/](https://canalstreet.market/)
 - [ ] [https://wonhumdred.com/](https://wonhumdred.com/)
@@ -718,3 +718,6 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 
 ## 4.7 [https://rodicdavidson.co.uk/](https://rodicdavidson.co.uk/)
 <img src="https://user-images.githubusercontent.com/32609010/103493509-255e2880-4e75-11eb-8d34-ecadce308853.gif" width="50%" height="50%">
+
+## 4.8 [https://beige.de/](https://beige.de/)
+<img src="https://user-images.githubusercontent.com/32609010/103609920-40f32d00-4f62-11eb-9c04-c7b9c03e954f.gif" width="50%" height="50%">

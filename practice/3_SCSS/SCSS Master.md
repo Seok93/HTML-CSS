@@ -1,5 +1,5 @@
 # 목차
-1\) [FLEXBOX](#1-flexbox):
+1\) [FLEXBOX](#1-flexbox) :
 - [x] [부모요소] flex-direction
 - [x] [부모요소] justfy-content
 - [x] [부모요소] align-items
@@ -12,7 +12,7 @@
 - [x] [자식요소] flex-basic
 - [x] [부모요소] flex-flow
 
-2\) [GRID](#2-grid):
+2\) [GRID](#2-grid) :
 - [x] [부모요소] grid-template-columns
 - [x] [부모요소] grid-template-rows
 - [x] [부모요소] column-gap
@@ -41,7 +41,7 @@
 - [x] [부모요소] grid-auto-flow
 - [x] [자식요소] order
 
-3\) Keywords & Functions:
+3\) Keywords & Functions :
 - [x] repeat()
 - [x] fr
 - [x] minmax
@@ -50,7 +50,7 @@
 - [x] min-content
 - [x] max-content
 
-4\) [SCSS](#3-scss):
+4\) [SCSS](#3-scss) :
 - [x] Variables
 - [x] Nesting
 - [x] Partials
@@ -62,7 +62,7 @@
 - [x] [flexbox froggy](http://flexboxfroggy.com/) Flexbox 연습을 위한 사이트
 - [x] [grid garden](http://cssgridgarden.com/) Grid 연습을 위한 사이트
 
-6\) [To Clone](#4-clone):
+6\) [CLONE](#4-clone) :
 - [x] [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
 - [x] [https://paint-box.com/](https://paint-box.com/)
 - [x] [http://10x19.co/](http://10x19.co/)
@@ -73,6 +73,9 @@
 - [x] [https://beige.de/](https://beige.de/)
 - [x] [https://canalstreet.market/](https://canalstreet.market/)
 - [x] [https://wonhundred.com/](https://wonhundred.com/)
+
+7\) [Assignment](#5-assignment) :
+- [x] Poster
 
 
 # 🌈1 FLEXBOX
@@ -727,3 +730,8 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 
 ## 4.10 [https://wonhundred.com/](https://wonhundred.com/)
 <img src="https://user-images.githubusercontent.com/32609010/103865479-9f0d4500-5107-11eb-86fe-08e0641b1b62.gif" width="50%" height="50%">
+
+
+# 🌈5 ASSIGNMENT
+## 5.1 poster
+<img src="https://user-images.githubusercontent.com/32609010/104270443-e450be80-54db-11eb-9358-4347790a2df9.PNG" width="50%" height="50%">

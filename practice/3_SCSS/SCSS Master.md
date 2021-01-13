@@ -738,4 +738,4 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 <img src="https://user-images.githubusercontent.com/32609010/104270443-e450be80-54db-11eb-9358-4347790a2df9.PNG" width="50%" height="50%">
 
 ## 5.2 Grid Template
-<img src="" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/32609010/104431703-88fdf980-55cb-11eb-9ea9-8a12d05331c5.PNG" width="50%" height="50%">

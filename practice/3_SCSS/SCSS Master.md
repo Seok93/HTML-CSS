@@ -76,6 +76,7 @@
 
 7\) [Assignment](#5-assignment) :
 - [x] Poster
+- [x] Grid Template
 
 
 # 🌈1 FLEXBOX
@@ -733,5 +734,8 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 
 
 # 🌈5 ASSIGNMENT
-## 5.1 poster
+## 5.1 Poster
 <img src="https://user-images.githubusercontent.com/32609010/104270443-e450be80-54db-11eb-9358-4347790a2df9.PNG" width="50%" height="50%">
+
+## 5.2 Grid Template
+<img src="" width="50%" height="50%">

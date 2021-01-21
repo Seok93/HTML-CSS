@@ -754,4 +754,4 @@ Awesome scss mixins 검색하면 엄청 많은 라이브러리가 나오는데 B
 <img src="https://user-images.githubusercontent.com/32609010/104989869-bbda3e80-5a5e-11eb-8c90-935707a4775a.gif" width="50%" height="50%">
 
 ## 5.5 Classes
-<img src="" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/32609010/105318117-72c4ee80-5c06-11eb-8482-44843da8f13e.gif" width="50%" height="50%">

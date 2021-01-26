@@ -2,13 +2,13 @@
 React JS Fundamentals Course 2019 update!
 
 # 목차
-0) [Preparation](#0-preparation)
-1) [Create React Project](#1-create-react-project)
-2) [JSX & Props](#2-jsx--props)
-3) [State](#3-state)
-4) [Life Cycle & Data Fetch](#4-life-cycle--data-fetch)
-5) [Make Simple Movie App](#5-make-simple-movie-app)
-6) [Routing](#6-routing)
+0\) [Preparation](#0-preparation)   
+1\) [Create React Project](#1-create-react-project)   
+2\) [JSX & Props](#2-jsx--props)   
+3\) [State](#3-state)   
+4\) [Life Cycle & Data Fetch](#4-life-cycle--data-fetch)   
+5\) [Make Simple Movie App](#5-make-simple-movie-app)   
+6\) [Routing](#6-routing)   
 
 # 🌈0 PREPARATION
 ## 0.1 설치항목
@@ -162,16 +162,15 @@ ReactDOM.render(
 
 위의 <App />과 같이 HTML형태로 사용하는 Javascript 문법을 **JSX**라고 한다. (쉽게 생각하면 Javascript 안의 HTML이다.) 이것은 React에서 소개하고 사용하는 개념으로, HTML형태에 JS표현식을 사용하여 얼마든지 원하는 동작을 꾸밀 수 있다. 나머지 사용방법은 JS의 문법을 사용할 예정이기에, React를 학습함에 있어 JS와 ES6~11의 문법을 익히는 것은 필수이다. (variables, classes, arrays, maps, returns, functions, async/await etc…)
 
-```
-Component를 만드는 가장 기본적인 순서   
 
-1) src 디렉터리에 Component명.js 파일을 만든다. (ex) Movie.js)
-2) Component명.js 파일에 react 모듈을 추가하고, 파일명과 같은 function을 정의하거나, React.Component를 확장한 class를 만든다.
-3) function으로 만든 경우 return으로 JSX와 HTML코드로 이루어진 Component를 반환하면 되고,
-class로 만든 경우 render() 메소드를 이용하여 JSX와 HTML코드를 반환해주면 된다.
-4) export default를 선언하여 다른 파일에서 사용할 수 있도록 해준다.
-5) Component명.js를 꾸며줄 Component.css파일을 만든다. (ex) Movie.css)
-```
+Component를 만드는 가장 기본적인 순서   
+1\) src 디렉터리에 Component명.js 파일을 만든다. (ex) Movie.js)   
+2\) Component명.js 파일에 react 모듈을 추가하고, 파일명과 같은 function을 정의하거나, React.Component를 확장한 class를 만든다.   
+3\) function으로 만든 경우 return으로 JSX와 HTML코드로 이루어진 Component를 반환하면 되고,
+class로 만든 경우 render() 메소드를 이용하여 JSX와 HTML코드를 반환해주면 된다.   
+4\) export default를 선언하여 다른 파일에서 사용할 수 있도록 해준다.   
+5\) Component명.js를 꾸며줄 Component.css파일을 만든다. (ex) Movie.css)   
+
 ```jsx
 // Movie.js
 import React from "react";
@@ -357,13 +356,10 @@ prop-types 모듈을 통해 Food Component의 예상되는 타입을 지정할 �
 ## 3.0 Class Components and State
 **State**는 보통 우리가 동적 데이터와 함께 작업할 때 만들어진다. Props는 정적인 데이터(한 번 정해지면 그대로 유지되는...)를 다룰 때 좋다면, State는 동적 데이터(상황에 따라 값이 달라지는...)를 다룰 때 좋다.
 
-```
 Class component를 만드는 순서   
-
-1) component명.js 파일을 만든다.   
-2) component명.js파일의 component명을 class명으로 지정하여 class를 생성하되, React.Componet를 상속하도록한다. (React의 사이클주기와 state 등 다양한 기능을 위해)   
-3) render 메소드를 통해 component를 반환한다.   
-```
+1\) component명.js 파일을 만든다.      
+2\) component명.js파일의 component명을 class명으로 지정하여 class를 생성하되, React.Componet를 상속하도록한다. (React의 사이클주기와 state 등 다양한 기능을 위해)   
+3\) render 메소드를 통해 component를 반환한다.   
 
 ※ function component는 return을 통해 component를 반환했다면, class component는 render메소드를 통해 component 반환한다.   
 

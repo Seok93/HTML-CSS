@@ -1,0 +1,23 @@
+{
+  "name": "5_schwartz",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "clone coding to schwartz",
+  "author": "Woo",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "gulp dev"
+  }
+}

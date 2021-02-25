@@ -13,35 +13,35 @@
 ・[CSS 설명 문서](https://github.com/Seok93/front-end-study/blob/master/1_HTML%26CSS/CSS%20%EC%84%A4%EB%AA%85.md)   
 ・[종합 설명 문서](https://github.com/Seok93/front-end-study/blob/master/1_HTML%26CSS/HTML%EA%B3%BC%20CSS%EC%9D%98%20%EA%B0%84%EB%9E%B5%ED%95%9C%20%EC%84%A4%EB%AA%85%20with%20Nomad%20Coders.md)
   
-### 1-1 flex 활용하기   
+### 1.1 flex 활용하기   
 <img src="https://user-images.githubusercontent.com/32609010/95164894-deb15180-07e5-11eb-962d-6ec798a466e8.PNG" width="50%" height="50%">
 
-### 1-2 pseudo selectors와 position 활용하기   
+### 1.2 pseudo selectors와 position 활용하기   
 <img src="https://user-images.githubusercontent.com/32609010/95165298-a9593380-07e6-11eb-9325-dbfde871b42b.PNG" width="50%" height="40%">
 
-### 1-3 transform과 animation 활용하기   
+### 1.3 transform과 animation 활용하기   
 <img src="https://user-images.githubusercontent.com/32609010/95165749-985cf200-07e7-11eb-8379-648d14830cda.gif" width="50%" height="50%">
 
-### 1-4 간단한 playlist clone 해보기
+### 1.4 간단한 playlist clone 해보기
 <img src="https://user-images.githubusercontent.com/32609010/95298363-ebea4100-08b6-11eb-9dfa-1dd065b8c222.PNG" width="50%" height="40%">
 
-### 1-5 book store clone 해보기
+### 1.5 book store clone 해보기
 <img src="https://user-images.githubusercontent.com/32609010/102322474-78556600-3fc2-11eb-9713-fb6dbbfbfbac.PNG" width="50%" height="40%">
 
-### 1-6 playlist2 clone 해보기
+### 1.6 playlist2 clone 해보기
 <img src="https://user-images.githubusercontent.com/32609010/102322508-87d4af00-3fc2-11eb-856e-9d26d06ea54f.PNG" width="50%" height="40%">
 
 # 📚 2 JS
 ・[JS 설명 문서](./2_JS/JS.md)
 
 ### 2.1 Calculation   
-<img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif">
+<img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif" width="50%" height="50%">
 
 ### 2.2 Video Player
-<img src="https://user-images.githubusercontent.com/32609010/109135902-e83e5480-779a-11eb-8c9f-8aca2989f4b8.gif">
+<img src="https://user-images.githubusercontent.com/32609010/109135902-e83e5480-779a-11eb-8c9f-8aca2989f4b8.gif" width="50%" height="50%">
 
 ### 2.3 Momontum
-<img src="https://user-images.githubusercontent.com/32609010/109133531-71a05780-7798-11eb-9d85-ecee5ed6b93f.gif">
+<img src="https://user-images.githubusercontent.com/32609010/109133531-71a05780-7798-11eb-9d85-ecee5ed6b93f.gif" width="50%" height="50%">
 
 
 # 📚 3 SASS(SCSS)

@@ -32,7 +32,17 @@
 <img src="https://user-images.githubusercontent.com/32609010/102322508-87d4af00-3fc2-11eb-856e-9d26d06ea54f.PNG" width="50%" height="40%">
 
 # 📚 2 JS
-・[VanillaJS 설명 문서]()
+・[JS 설명 문서](./2_JS/JS.md)
+
+### 2.1 Calculation   
+<img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif">
+
+### 2.2 Video Player
+<img src="https://user-images.githubusercontent.com/32609010/109135902-e83e5480-779a-11eb-8c9f-8aca2989f4b8.gif">
+
+### 2.3 Momontum
+<img src="https://user-images.githubusercontent.com/32609010/109133531-71a05780-7798-11eb-9d85-ecee5ed6b93f.gif">
+
 
 # 📚 3 SASS(SCSS)
 ・[SCSS 설명 문서](https://github.com/Seok93/front-end-study/blob/master/3_SCSS/SCSS%20Master.md)

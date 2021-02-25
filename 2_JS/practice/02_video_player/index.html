@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Player</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+
+  <body>
+    <div class="video-wrapper" id="jsVideoWrapper">
+      <video
+        width="700px"
+        src="https://serranoarevalo.github.io/notflix/9bfd1023900e31286103369c803c7ee9.ogv"
+        id="jsVideo"
+      ></video>
+      <div class="player" id="jsPlayer">
+        <div class="player__buttons">
+          <span class="player__play" id="jsPlay">
+            <i class="fas fa-play"></i>
+          </span>
+          <span class="player__pause invisible" id="jsPause">
+            <i class="fas fa-pause"></i>
+          </span>
+        </div>
+        <div class="player__time">
+          <input
+            class="player__progress"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0"
+            id="jsProgress"
+          />
+          <span class="player__current" id="jsCurrent">00:00</span>
+          <span>/</span>
+          <span class="player__end" id="jsEnd">00:00</span>
+        </div>
+        <div class="player__functions">
+          <span class="player__mute" id="jsMute">
+            <i class="fas fa-volume-up"></i>
+          </span>
+          <span class="player__unmute invisible" id="jsUnmute">
+            <i class="fas fa-volume-mute"></i>
+          </span>
+          <span class="player__setting">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/577211be80.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

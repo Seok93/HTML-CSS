@@ -18,6 +18,20 @@
    - [x] 화살표 함수(arrow function)
    - [x] call, apply, bind 기능
 
+7. [스코프](./basic/07_스코프.md)
+   - [x] 스코프란
+   - [x] 정적 스코프와 동적 스코프
+   - [x] 전역 스코프, 블록 스코프, 함수 스코프
+   - [x] 변수 숨김 (Variable Masking)
+   - [x] 클로저 (Closure)
+   - [x] 즉시 실행 함수 (IIFE)
+   - [x] 호이스팅 (Hoisting)
+   - [x] 스코프체인 (Scope Chain)
+   - [x] 스트릭트 모드 (Strict Mode)
+
+8. [배열과 배열처리](./basic/08_배열과%20배열%20처리.md)
+   
+
 # 🌈 2 Practice
 ### 1. Calculation   
 <img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif" width="50%" height="50%">

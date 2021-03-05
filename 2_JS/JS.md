@@ -38,6 +38,12 @@
     - [x] 프로토타입(Prototype)과 동적 디스패치(Dinamic Dispatch)
     - [x] 클래스의 상속와 프로토타입 체인
     - [x] 믹스인(Mixins)
+
+10. [맵과 셋](./basic/10_맵과%20셋.md)
+    - [x] Map
+    - [x] WeakMap
+    - [x] Set
+    - [x] WeakSet
    
 
 # 🌈 2 Practice

@@ -1,9 +1,10 @@
 # 목차
-1\) [JS Document](#-1-js-document)   
-2\) [Practice](#-2-practice)   
-3\) [Clone](#-3-clone)   
+1\) [JS Basic Document](#-1-js-basic-document)   
+2\) [JS Core Document](#-2-js-core-document)   
+3\) [Practice](#-3-practice)   
+4\) [Clone](#-4-clone)   
 
-# 🌈 1 JS Document
+# 🌈 1 JS Basic Document
 1. [변수와 상수, 데이터타입](./basic/01_변수와%20상수,%20데이터타입.md)
    - [x] 변수와 상수
    - [x] 식별자 명명규칙과 표기법
@@ -45,14 +46,28 @@
     - [x] Set
     - [x] WeakSet
    
+11. [예외와 에러처리](./basic/11_예외와%20에러%20처리.md)
+   - [x] Error 객체
+   - [x] 예외처리(try/catch/finally)
+   - [x] 예외발생(throw)
+   - [x] 예외 처리와 호출스택(Call Stack)
 
-# 🌈 2 Practice
+# 🌈 2 JS Core Document
+1. [실행 컨텍스트](./core/01_변수와%20상수,%20데이터타입.md)
+   - [x] 실행 컨텍스트란 (Execution Context)
+   - [x] Variable Environment
+   - [x] Lexical Environment
+   - [x] Environment Record: 호이스팅
+   - [x] Outer Environment Reference: 스코프 체인
+   - [x] thisBinding
+
+# 🌈 3 Practice
 ### 1. Calculation   
 <img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif" width="50%" height="50%">
 
 ### 2. Video Player
 <img src="https://user-images.githubusercontent.com/32609010/109135902-e83e5480-779a-11eb-8c9f-8aca2989f4b8.gif" width="50%" height="50%">
 
-# 🌈 3 Clone
+# 🌈 4 Clone
 ### 1. Momontum
 <img src="https://user-images.githubusercontent.com/32609010/109133531-71a05780-7798-11eb-9d85-ecee5ed6b93f.gif" width="50%" height="50%">

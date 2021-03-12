@@ -48,7 +48,7 @@
    
 11. [예외와 에러처리](./basic/11_예외와%20에러%20처리.md)
    - [x] Error 객체
-   - [x] 예외처리(try/catch/finally)
+   - [x] 예외처리 구조(try/catch/finally)
    - [x] 예외발생(throw)
    - [x] 예외 처리와 호출스택(Call Stack)
 

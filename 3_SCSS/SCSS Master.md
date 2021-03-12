@@ -59,6 +59,7 @@
 - [x] Responsive Minxins
 
 5\) Practice flexbox and grid:
+- [x] [flukeout](https://flukeout.github.io/) Selector 연습을 위한 사이트    
 - [x] [flexbox froggy](http://flexboxfroggy.com/) Flexbox 연습을 위한 사이트
 - [x] [grid garden](http://cssgridgarden.com/) Grid 연습을 위한 사이트
 

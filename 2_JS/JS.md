@@ -53,7 +53,7 @@
     - [x] 예외 처리와 호출스택(Call Stack)
 
 # 🌈 2 JS Core Document
-1. [실행 컨텍스트](./core/01_변수와%20상수,%20데이터타입.md)
+1. [실행 컨텍스트](./core/02_실행%20컨텍스트.md)
    - [x] 실행 컨텍스트란 (Execution Context)
    - [x] Variable Environment
    - [x] Lexical Environment

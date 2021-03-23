@@ -61,6 +61,11 @@
    - [x] Outer Environment Reference: 스코프 체인
    - [x] thisBinding
 
+2. [this 이해하기](./core/03_this.md)
+   - [x] 상황에 따라 달라지는 this
+   - [x] 명시적으로 this를 바인딩하는 방법
+
+
 # 🌈 3 Practice
 ### 1. Calculation   
 <img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif" width="50%" height="50%">

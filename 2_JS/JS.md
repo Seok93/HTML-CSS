@@ -72,10 +72,13 @@
    - [x] 콜백 지옥과 비동기 제어
 
 # 🌈 3 Practice
-### 1. Calculation   
+### 1. Target 007
+<img src="https://user-images.githubusercontent.com/32609010/115222291-8a4c3e80-a145-11eb-92e3-9482215283f2.gif" width="50%" height="50%">
+
+### 2. Calculation   
 <img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif" width="50%" height="50%">
 
-### 2. Video Player
+### 3. Video Player
 <img src="https://user-images.githubusercontent.com/32609010/109135902-e83e5480-779a-11eb-8c9f-8aca2989f4b8.gif" width="50%" height="50%">
 
 # 🌈 4 Clone

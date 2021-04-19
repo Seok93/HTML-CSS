@@ -34,13 +34,16 @@
 # 📚 2 JS
 ・[JS 설명 문서](./2_JS/JS.md)
 
-### 2.1 Calculation   
+### 2.1 Target 007
+<img src="https://user-images.githubusercontent.com/32609010/115222291-8a4c3e80-a145-11eb-92e3-9482215283f2.gif" width="50%" height="50%">
+
+### 2.2 Calculation   
 <img src="https://user-images.githubusercontent.com/32609010/109135518-82ea6380-779a-11eb-834a-0da9209ded7a.gif" width="50%" height="50%">
 
-### 2.2 Video Player
+### 2.3 Video Player
 <img src="https://user-images.githubusercontent.com/32609010/109135902-e83e5480-779a-11eb-8c9f-8aca2989f4b8.gif" width="50%" height="50%">
 
-### 2.3 Momontum
+### 2.4 Momontum
 <img src="https://user-images.githubusercontent.com/32609010/109133531-71a05780-7798-11eb-9d85-ecee5ed6b93f.gif" width="50%" height="50%">
 
 

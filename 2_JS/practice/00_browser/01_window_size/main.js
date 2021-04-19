@@ -1,12 +1,12 @@
 const tag = document.querySelector(".tag");
 
 const updatePageSize = (event) => {
-  const screenSizeText = `window.screen: ${window.screen["width"]}, ${window.screen["height"]}`;
+  const screenSizeText = `window.screen: ${window.screen.width}, ${window.screen.height}`;
   const outerSizeText = `window.outer: ${window.outerWidth}, ${window.outerHeight}`;
   const innerSizeText = `window.inner: ${window.innerWidth}, ${window.innerHeight}`;
   const clientSizeText = `documentElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`;
 
-  const textAray = [
+  const textArray = [
     screenSizeText,
     outerSizeText,
     innerSizeText,
@@ -15,7 +15,7 @@ const updatePageSize = (event) => {
 
   let idx = 0;
   for (const child of tag.children) {
-    child.innerText = textAray[idx++];
+    child.innerText = textArray[idx++];
   }
 };
 
